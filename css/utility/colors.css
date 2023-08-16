@@ -1,0 +1,93 @@
+/* Definição das cores do projeto */
+
+:root {
+    --white: #fff;
+    --blue-50: #37CDFCB8;
+    --blue-100: #03BAF3;
+    --blue-200: #0FA6D4;
+    --blue-300: #0285CD;
+    --blue-400: #036DCF;
+    --blue-500: #0D3776;
+    --blue-600: #0B2D61;
+    --blue-700: #08224A;
+    --blue-800: #051B3C;
+    --blue-900: #031228;
+    --black-blue: #2C2F2F;
+    --darker-gradient: linear-gradient(180deg, --blue-900 0%, --blue-700 100%);
+    --light-dark-top-bottom: linear-gradient(180deg, #03BAF3 0%, #0285CD 100%);
+    --ligth-dark-left-rigth: linear-gradient(90deg, #03BAF3 0%, #0285CD 100%);
+}
+
+/* --------------------------------- */
+
+/* Definição das classes com as cores para caso eu decida usar no html */
+
+.color-white {
+    color: var(--white);
+}
+
+.background-white {
+    background: var(--white);
+}
+
+.color-blue-50 {
+    color: var(--blue-50);
+}
+
+.color-blue-100 {
+    color: var(--blue-100);
+}
+
+.color-blue-200 {
+    color: var(--blue-200);
+}
+
+.color-blue-300 {
+    color: var(--blue-300);
+}
+
+.color-blue-400 {
+    color: var(--blue-400);
+}
+
+.color-blue-500 {
+    color: var(--blue-500);
+}
+
+.color-blue-600 {
+    color: var(--blue-600);
+}
+
+.color-blue-700 {
+    color: var(--blue-700);
+}
+
+.color-blue-800 {
+    color: var(--blue-800);
+}
+
+.color-blue-900 {
+    color: var(--blue-900);
+}
+
+.color-black-blue {
+    color: var(--black-blue);
+}
+
+.darker-gradient {
+    background: var(--darker-gradient);
+    color: var(--darker-gradient);
+}
+
+.light-dark-top-bottom {
+    background: var(--light-dark-top-bottom);
+    color: var(--light-dark-top-bottom);
+}
+
+.ligth-dark-left-rigth {
+    background: var(--ligth-dark-left-rigth);
+    color: var(--ligth-dark-left-rigth);
+}
+
+/* --------------------------------- */
+

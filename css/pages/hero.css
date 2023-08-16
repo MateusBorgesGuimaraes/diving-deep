@@ -1,0 +1,171 @@
+.hero {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+
+.circle {
+  margin-top: 64px;
+  grid-column: 2/4;
+  background: plum;
+  width: 400px;
+  height: 400px;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  overflow: hidden;
+  animation: morph 4s linear infinite;
+}
+
+/* .circle img {
+  width: 100%;
+} */
+
+@keyframes morph {
+  0%, 100% {
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+  }
+  34% {
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+  }
+  67% {
+    border-radius: 90% 60% 60% 100% / 100% 100% 60% 50%;
+  }
+}
+
+.texts {
+  grid-column: 4/-1;
+  position: relative;
+}
+
+.texts h2 {
+  margin-bottom: 12px;
+}
+
+.texts p {
+  width: 40ch;
+}
+
+.texts::before {
+  content: '';
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  top: -64px;
+  right: -48px;
+  background-image: url("../../images/peixe1.png");
+}
+
+.texts::after {
+  content: '';
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  bottom: -98px;
+  left: -148px;
+  background-image: url("../../images/peixe2.png");
+}
+
+.diving-word {
+  position: relative;
+}
+
+.texts .diving-word::after {
+  content: '';
+  position: absolute;
+  width: 87px;
+  height: 141px;
+  right: -98px;
+  top: 48px;
+  background-image: url("../../images/bolhas-grupo.png");
+}
+
+@media(max-width: 76rem) {
+  .circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .texts::after {
+    content: none;
+  }
+}
+
+@media(max-width: 61.875rem) {
+  .texts .diving-word::after {
+   content: none;
+  }
+
+  .texts::before {
+    top: -32px;
+  }
+}
+
+@media(max-width: 55rem) {
+  .texts::before {
+    content: none;
+  }
+
+  .texts p {
+    width: 30ch;
+  }
+
+  .diving-word img {
+    width: 12.5rem;
+    height: 4.5713rem;
+  }
+}
+
+@media(max-width: 45rem) {
+  .circle {
+    width: 200px;
+    height: 200px;
+    grid-column: 8/-1;
+  }
+
+  .texts {
+    margin-top: 64px;
+    grid-column: 1/8;
+    grid-row: 1;
+    /* margin-left: 80px; */
+  }
+}
+
+@media(max-width: 36.25rem) {
+  .circle {
+    display: none;
+  }
+
+  .texts {
+    grid-column: 1/-1;
+  }
+  .texts p {
+    width: 40ch;
+  }
+
+  .diving-word img {
+    width: 21.875rem;
+    height: 8rem;
+  }
+}
+
+@media(max-width: 27.5rem) {
+  .texts {
+    margin-top: 2rem;
+  }
+
+  .diving-word img {
+    width: 15rem;
+    height: 5.4856rem;
+  }
+
+  .texts p {
+    width: 30ch;
+  }
+}
+
+@media(max-width: 20.625rem) {
+  .texts p {
+    width: 20ch;
+  }
+}

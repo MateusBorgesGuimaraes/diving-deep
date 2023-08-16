@@ -1,0 +1,21 @@
+/* Definições Padrões */
+
+@import "../css/utility/colors.css";
+@import "../css/utility/fonts.css";
+@import "../css/utility/reset.css";
+@import "../css/utility/global.css";
+
+/* ------------------- */
+
+/* Paginas Importadas */
+
+@import "./pages/header.css";
+@import "./pages/hero.css";
+@import "./pages/sobre.css";
+@import "./pages/seguranca.css";
+@import "./pages/reviews.css";
+@import "./pages/planos.css";
+@import "./pages/localidades.css";
+@import "./pages/footer.css";
+
+/* ------------------- */

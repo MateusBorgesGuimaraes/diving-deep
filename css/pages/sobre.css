@@ -1,0 +1,268 @@
+.sobre-bg {
+  margin-top: 4rem;
+  position: relative;
+  isolation: isolate;
+}
+
+.sobre-bg::after{
+  content: '';
+  background-image: var(--light-dark-top-bottom);
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  transform: skewY(-2deg);
+}
+
+.sobre {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+
+.sobre h1 {
+  margin-top: 4.5rem;
+  grid-row: 1;
+  grid-column: 1/-1;
+}
+
+.frase1 {
+  margin-top: 2.5rem;
+  grid-row: 2;
+  grid-column: 4/10;
+  display: flex;
+  align-items: center;
+  gap: 1.125rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.frase2 {
+  grid-row: 3;
+  grid-column: 3/10;
+  display: flex;
+  align-items: center;
+  gap: 1.125rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.frase3 {
+  grid-row: 4;
+  grid-column: 5/12;
+  display: flex;
+  align-items: center;
+  gap: 1.125rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.frase4 {
+  grid-row: 5;
+  grid-column: 2/9;
+  display: flex;
+  align-items: center;
+  gap: 1.125rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.frase5 {
+  grid-row: 6;
+  grid-column: 4/11;
+  display: flex;
+  align-items: center;
+  gap: 1.125rem;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.sobre p {
+  font-weight: 400;
+}
+
+.bolha1, .bolha2, .bolha3, .bolha4, .bolha5  {
+  width: 6.25rem;
+  height: 6.25rem;
+  flex-shrink: 0;
+}
+
+.frase1::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 220px;
+  left: 600px;
+  background-image: url("../../images/ancora1.png");
+  background-repeat: no-repeat;
+}
+
+.frase3::after {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 700px;
+  top: 20px;
+  background-image: url("../../images/peixe1.png");
+  background-repeat: no-repeat;
+}
+
+.frase4::after {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 800px;
+  top: 0px;
+  background-image: url("../../images/peixe3.png");
+  background-repeat: no-repeat;
+}
+
+.frase2::before {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: -140px;
+  top: -40px;
+  background-image: url("../../images/Jellyfish.png");
+  background-repeat: no-repeat;
+}
+
+
+.frase4::before {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: -140px;
+  top: -40px;
+  background-image: url("../../images/Jellyfish.png");
+  background-repeat: no-repeat;
+}
+
+@media(max-width: 75rem) {
+  .frase4::before {
+    content: none;
+  }
+
+  .frase3::after {
+    content: none;
+  }
+}
+
+@media(max-width: 67.5rem) {
+  .frase1::after {
+    left: 500px;
+  }
+
+  .frase4::after {
+    left: 600px;
+  }
+}
+
+@media(max-width: 59rem) {
+  .frase1::after {
+    content: none;
+  }
+
+  .frase4::after {
+    content: none;
+  }
+
+  .frase2::before {
+    content: none;
+  }
+
+  .frase1 {
+    grid-column: 3/11;
+  }
+  
+  .frase2 {
+    grid-column: 4/11;
+  }
+  
+  .frase3 {
+    grid-column: 3/11;
+  }
+  
+  .frase4 {
+    grid-column: 4/11;
+  }
+  
+  .frase5 {
+    grid-column: 3/11;
+  }
+
+  .bolha1, .bolha2, .bolha3, .bolha4, .bolha5  {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media(max-width: 50rem) {
+  .frase1 {
+    grid-column: 2/11;
+  }
+  
+  .frase2 {
+    grid-column: 3/-1;
+  }
+  
+  .frase3 {
+    grid-column: 2/11;
+  }
+  
+  .frase4 {
+    grid-column: 3/-1;
+  }
+  
+  .frase5 {
+    grid-column: 2/11;
+  }
+
+  .bolha1, .bolha2, .bolha3, .bolha4, .bolha5  {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media(max-width: 37.5rem) {
+  .frase1 {
+    grid-column: 1/-1;
+    max-width: 28ch;
+  }
+  
+  .frase2 {
+    grid-column: 1/-1;
+    max-width: 28ch;
+  }
+  
+  .frase3 {
+    grid-column: 1/-1;
+    max-width: 28ch;
+  }
+  
+  .frase4 {
+    grid-column: 1/-1;
+    max-width: 28ch;
+  }
+  
+  .frase5 {
+    grid-column: 1/-1;
+    max-width: 28ch;
+  }
+}
+
+@media(max-width: 25rem) {
+
+  .frase1 {
+    margin-top: 2rem;
+  }
+
+  .bolha1, .bolha2, .bolha3, .bolha4, .bolha5  {
+    display: none;
+  }
+}

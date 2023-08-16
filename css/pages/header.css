@@ -1,0 +1,129 @@
+.fixo {
+  position: sticky;
+  top: 0;
+  z-index: 100000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 1rem 0rem;
+}
+
+.navegacao {
+  display: flex;
+  gap: 1.125rem;
+  align-items: center;
+}
+
+.navegacao li {
+  position: relative;
+}
+
+.navegacao li::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0px;
+  right: -10px;
+  width: .125rem;
+  height: 1.5rem;
+  border-radius: .125rem;
+  opacity: 0.6;
+  background: var(--blue-400);
+}
+
+.navegacao li:last-child::after {
+  content: none;
+}
+
+.navegacao li:nth-child(5)::after {
+  content: none;
+}
+
+.btn-contato {
+  background-color: var(--blue-400);
+  padding: .625rem .75rem;
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.header a:hover {
+  color: var(--blue-50);
+  transition: 0.3s;
+}
+
+@media(max-width: 54rem) {
+  .navegacao {
+    justify-content: center;
+    gap: 24px;
+    z-index: 1000;
+    position: fixed;
+    inset: 0 0 0 50%;
+
+    flex-direction: column;
+    padding: min(30vh 10rem);
+
+    background: hsl(0, 0%, 0% / 0.1);
+    backdrop-filter: blur(1rem);
+    color: var(--blue-800);
+
+    /* transform: translateX(100%); */
+    transition: transform 350ms ease-out;
+  }
+
+  .navegacao li::after {
+    content: none;
+  }
+
+  .btn-contato {
+    padding: .875rem 1rem;
+  }
+
+  .navegacao[data-visible="false"] {
+    transform: translateX(0%);
+  }
+
+  .navegacao[data-visible="false"] {
+    transform: translateX(100%);
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 99999;
+    background-image: url("../../images/burger2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    width: 2.5rem;
+    aspect-ratio: 1;
+    border: 0;
+    top: 1.125rem;
+    right: 1.125rem;
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url("../../images/close2.svg");
+  }
+
+  .sr-only {
+    display: none;
+  }
+}
+
+
+@media(max-width: 20.625rem) {
+  .logo {
+    width: 10rem;
+    height: 2.5rem;
+  }
+}

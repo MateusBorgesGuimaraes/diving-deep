@@ -1,0 +1,33 @@
+.container {
+  box-sizing: border-box;
+  max-width: 76rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media(max-width: 76rem) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.btn-global:hover {
+  background-color: var(--blue-600);
+}
+
+.btn-global2:hover {
+  background-color: var(--blue-800)
+}
+
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px ,0 ,0);
+  transition: .3s;
+}
+
+.js-scroll.ativo {
+ opacity: 1;
+ transform: translate3d(0px ,0 ,0);
+ transition: .3s;
+}

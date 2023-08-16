@@ -1,0 +1,84 @@
+.localidades {
+  margin-bottom: 64px;
+}
+
+.cards-localidade {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 48px;
+  justify-content: center;
+}
+
+.card-localidade {
+  width: 384px;
+  height: 400px;
+  background-image: url("../../images/img-localidade-1.png");
+  box-sizing: border-box;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-localidade2 {
+  background-image: url("../../images/img-localidade-2.png");
+}
+
+.card-localidade3 {
+  background-image: url("../../images/img-localidade-3.png");
+}
+
+.card-localidade4 {
+  background-image: url("../../images/img-localidade-4.png");
+}
+
+.card-localidade5 {
+  background-image: url("../../images/img-localidade-5.png");
+}
+
+.card-localidade6 {
+  background-image: url("../../images/img-localidade-6.png");
+}
+
+.black-window {
+  background: rgba(0, 0, 0, 0.60);
+  transition: all 0.4s ease-in-out;
+}
+
+.localidades-btn {
+  background-color: var(--blue-500);
+  padding: 6px 24px;
+  border-radius: 4px;
+}
+
+.localidades-btn1 {
+  align-self: flex-end;
+  margin: 14px 8px;
+}
+
+.black-window h3 {
+  margin: 12px;
+}
+
+.black-window p {
+  margin: 8px 12px 24px 12px;
+}
+
+.black-window:hover {
+  background: rgba(0, 0, 0, 0.80);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media(max-width: 340px) {
+  .localidades h1 {
+    font-size: 32px;
+  }
+
+  .cards-localidade {
+    margin-top: 24px;
+  }
+}

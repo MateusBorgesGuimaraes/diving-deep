@@ -1,0 +1,179 @@
+/* Importação das fontes do google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+
+/* <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> */
+
+/* --------------------------------- */
+
+/* Classes utilitarias para as fontes */
+
+.playfair-display-96-normal{
+  font-family: 'Playfair Display', serif;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.montserrat-14-normal {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.montserrat-16-normal {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.montserrat-16-semibold {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.montserrat-18-normal {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.montserrat-20-normal {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.montserrat-20-medium {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.montserrat-20-semibold {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.montserrat-24-medium {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.montserrat-24-semibold {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.montserrat-32-semibold {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+.montserrat-36-medium {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.montserrat-36-bold {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.montserrat-40-medium {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.montserrat-58-semibold {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.montserrat-64-semibold {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* --------------------------------- */
+
+@media(max-width: 55rem){
+  .montserrat-20-medium {
+    font-size: 18px;
+   } 
+}
+
+@media(max-width: 54rem) {
+ .montserrat-20-normal {
+  font-size: 18px;
+  font-weight: 600;
+ }   
+}
+
+
+@media(max-width: 59rem) {
+  .montserrat-18-normal {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+@media(max-width: 37.5rem) {
+  .montserrat-64-semibold {
+    font-size: 3rem;
+  }
+}
+
+
+@media(max-width: 47.5rem) {
+  .montserrat-32-semibold {
+    font-size: 1.5rem;
+  }
+}
+
+
+

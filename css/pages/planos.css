@@ -1,0 +1,186 @@
+.planos-bg {
+  margin-top: 0px;
+  margin-bottom: 64px;
+}
+
+.card-planos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 32px;
+}
+
+.tit-planos {
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.tit-planos::before {
+  content: '';
+  position: absolute;
+  top: 72px;
+  left: 4px;
+  width: 218px;
+  height: 20px;
+  background-image: url("../../images/det-planos.png");
+}
+
+.card-plano1 {
+  background-color: var(--blue-100);
+  max-width: 372px;
+  box-shadow: 0 0 0 4px var(--white),
+  0 0 0 8px var(--blue-100);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-plano2 {
+  background-color: var(--blue-200);
+  max-width: 372px;
+  box-shadow: 0 0 0 4px var(--white),
+  0 0 0 8px var(--blue-200);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-plano3 {
+  background-color: var(--blue-300);
+  max-width: 372px;
+  box-shadow: 0 0 0 4px var(--white),
+  0 0 0 8px var(--blue-300);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tit-planoInner {
+  margin-top: 1.5rem;
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.tit-planoInner::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 222px;
+  height: 8px;
+  background-color: var(--white);
+  top: 54px;
+  right: -8px;
+}
+
+.completo::before {
+  right: -20px;
+}
+
+.card-preco {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-desc-vantagens {
+  margin-top: 30px;
+  padding: 0 32px;
+}
+
+.card-vantagens {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.vatagem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 32px;
+  margin-bottom: 12px;
+}
+
+.planos-btn1 {
+  background-color: var(--blue-500);
+  margin-bottom: 24px;
+  margin-top: 32px;
+
+}
+
+.planos-btn {
+  background-color: var(--blue-500);
+  padding: 16px 72px;
+  border-radius: 4px;
+}
+
+@media(max-width: 51rem) {
+  .tit-planos {
+    position: relative;
+    margin-bottom: 48px;
+  }
+}
+
+@media(max-width: 37.5rem) {
+  .tit-planos::before{
+    content: none;
+    margin-bottom: 24px;
+    margin-top: 12px;
+  }
+}
+
+@media(max-width:21.25rem) {
+
+  .tit-planos{
+    margin-bottom: 12px;
+  }
+
+  .card-planos {
+    gap: 24px;
+  }
+  
+  .tit-planoInner {
+    margin-top: 1.125rem;
+    position: relative;
+    margin-bottom: 28px;
+  }
+  
+  .tit-planoInner::before {
+    content: none;
+  }
+
+  .card-preco {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .card-desc-vantagens {
+    margin-top: 18px;
+    padding: 0 12px;
+  }
+  
+  .card-vantagens {
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+  
+  .vatagem {
+    padding: 0 12px;
+  }
+  
+  .planos-btn1 {
+    margin-bottom: 18px;
+    margin-top: 24px;
+  }
+  
+  .planos-btn {
+    padding: 8px 48px;
+  }
+}
